@@ -185,8 +185,8 @@ Thumbs.db
 # Temporary test files
 test_commands.py
 
-# Development implementations (розробники створюватимуть тут)
-dev_implementation/
+# Development implementations (тепер це Git submodule)
+# dev_implementation/ - тепер submodule, не ігноруємо
 test_outputs/
 scratch/
 

@@ -1,0 +1,3 @@
+[submodule "dev_implementation"]
+	path = dev_implementation
+	url = https://github.com/slaventiysvat/assistant_dev_implementation.git
