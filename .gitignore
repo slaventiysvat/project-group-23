@@ -194,3 +194,12 @@ scratch/
 data/*.json
 *.backup
 logs/
+
+# Office files and temporary files
+*.xlsx
+*.xls
+*.doc
+*.docx
+*.ppt
+*.pptx
+~$*
