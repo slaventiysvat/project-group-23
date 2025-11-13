@@ -366,7 +366,7 @@ class FieldTester:
                 self.print_failure(f"Birthday з '{date_str}' викликає помилку: {e}")
         
         # Тести неvalідних дат
-        invalid_dates = ["32.13.2000", "15.03.2025", "abc", ""]
+        invalid_dates = ["32.13.2000", "15.03.2026", "abc", ""]
         
         for invalid_date in invalid_dates:
             try:
