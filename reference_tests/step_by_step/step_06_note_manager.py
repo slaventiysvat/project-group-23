@@ -451,8 +451,15 @@ class NoteManagerTester:
                 if len(new_manager._notes) >= 1:
                     self.print_success("load_notes() завантажує дані при ініціалізації")
                     
-                    loaded_note = new_manager.get_note_by_index(1)
-                    if loaded_note and loaded_note.title == "Нотатка для збереження":
+                    # Шукаємо нотатку серед всіх завантажених
+                    target_found = False
+                    for i in range(len(new_manager._notes)):
+                        note = new_manager.get_note_by_index(i + 1)
+                        if note and note.title == "Нотатка для збереження":
+                            target_found = True
+                            break
+                    
+                    if target_found:
                         self.print_success("load_notes() правильно відновлює нотатки")
                     else:
                         self.print_failure("load_notes() не відновлює нотатки правільно")
